@@ -18,6 +18,7 @@ const Data = () => {
                 },
             });
             const resp = await response.json();
+            console.log(resp);
             if (!response.ok) {
                 toast.error(resp.message);
                 // window.location.href = '/admin';
