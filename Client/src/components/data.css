@@ -1,0 +1,87 @@
+.menu{
+    width: 10px;
+    
+    
+}
+
+.filter-btn{
+  display: flex;
+  justify-content: left;
+  margin-bottom: 3%;
+  padding-left: 1%;
+}
+
+.task-table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tableData{
+    margin: 5% 15% 5% 15%;
+    overflow-x: auto;
+    
+    
+}
+.header{
+    font-size: x-large;
+    padding-left: 2%;
+    padding-bottom: 5%;  
+}
+.rows{
+   
+    padding: 2%;
+    font-size: medium;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.status{
+    font-size: medium;
+    padding: 7%;
+    
+
+}
+
+.cmtbtn{
+    padding: 5%;
+}
+
+
+
+@media (max-width: 1370px) {
+  .header,
+  .rows {
+    font-size: 0.75rem;
+    padding: 10px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  }
+
+  .task-table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+  .tableData {
+    padding: 0.25rem;
+   
+  }
+
+  .status,
+  .cmtbtn {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+
+  .tableData {
+    overflow-x: scroll;
+  }
+}
