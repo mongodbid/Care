@@ -58,10 +58,9 @@ const admin_login = async (req, res) => {
 
 const get_data = async (req, res) => {
     const token = req.cookies.token;
-
     try {
         if (!token) {
-            return res.status(401).json("Session Expired");
+            return res.status(401).json({message:"Session Expired"});
         }
         const id = await jwt.verify(token, process.env.JWT);
         const data = await User.find();
