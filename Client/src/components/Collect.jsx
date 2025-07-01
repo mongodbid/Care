@@ -17,7 +17,7 @@ const Collect = () => {
      setLoading(false);
      return;
     }
-    const response = await fetch(`http://localhost:5000/get`, {
+    const response = await fetch(`https://care-khaki.vercel.app/get`, {
             method: "POST",
             credentials: 'include',
             headers: {

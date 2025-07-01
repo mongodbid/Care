@@ -10,7 +10,7 @@ const Data = () => {
     useEffect(() => {
 
         const getData = async () => {
-            const response = await fetch("http://localhost:5000/get-data", {
+            const response = await fetch("https://care-khaki.vercel.app/get-data", {
                 method: "GET",
                 credentials: 'include',
                 headers: {
