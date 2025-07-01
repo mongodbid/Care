@@ -21,7 +21,7 @@ const Data = () => {
             console.log(resp);
             if (!response.ok) {
                 toast.error(resp.message);
-                // window.location.href = '/admin';
+                window.location.href = '/admin';
             }
             setData(resp ?resp:[]);
         }
