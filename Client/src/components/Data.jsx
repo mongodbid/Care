@@ -55,7 +55,7 @@ const Data = () => {
                                     <Table.Cell className="rows">{item.address}</Table.Cell>
                                     <Table.Cell className="rows">{item.city}</Table.Cell>
                                     <Table.Cell className="rows">{item.state}</Table.Cell>
-                                    <Table.Cell className="rows">{item.createdAt?.toString().slice(0, 10)}</Table.Cell>
+                                    <Table.Cell className="rows">{`${item.createdAt?.toString().slice(0, 10)}  ${item.createdAt?.toString().slice(11, 19)}`}</Table.Cell>
                                 </Table.Row>
                             ))}
                         </Table.Body>
