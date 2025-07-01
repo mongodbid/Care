@@ -20,7 +20,7 @@ const Data = () => {
             const resp = await response.json();
             if (!response.ok) {
                 toast.error(resp.message);
-                window.location.href = '/admin';
+                // window.location.href = '/admin';
             }
             setData(resp ?resp:[]);
         }
