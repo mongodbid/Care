@@ -43,6 +43,7 @@ const Data = () => {
                                 <Table.ColumnHeader className="header">Address</Table.ColumnHeader>
                                 <Table.ColumnHeader className="header">City</Table.ColumnHeader>
                                 <Table.ColumnHeader className="header">State</Table.ColumnHeader>
+                                <Table.ColumnHeader className="header">Created Time</Table.ColumnHeader>
                             </Table.Row>
                         </Table.Header>
                         <Table.Body>
@@ -53,6 +54,7 @@ const Data = () => {
                                     <Table.Cell className="rows">{item.address}</Table.Cell>
                                     <Table.Cell className="rows">{item.city}</Table.Cell>
                                     <Table.Cell className="rows">{item.state}</Table.Cell>
+                                    <Table.Cell className="rows">{item.createdAt?.toString().slice(0, 10)}</Table.Cell>
                                 </Table.Row>
                             ))}
                         </Table.Body>
