@@ -51,6 +51,8 @@ const admin_login = async (req, res) => {
     const cookieoption = {
         httpOnly: true,
         maxAge: 24 * 60 * 60 * 1000,
+        secure: true,
+        sameSite: 'None' 
     }
     res.cookie("token", token, cookieoption);
     res.status(200).json({ message: "Successfull Login" });
