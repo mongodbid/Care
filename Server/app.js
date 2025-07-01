@@ -19,7 +19,7 @@ catch (error) {
     console.log(error);
 }
 const corsOption ={
-    origin:"http://localhost:5173",
+    origin:"https://care-pp3n.vercel.app",
     methods: "GET, PUT, PATCH, DELETE, POST, HEAD",
     credentials:true
 }
