@@ -19,7 +19,7 @@ const Login = () => {
       setLoading(!loading);
 
       if(!id){
-        toast.error("Fill Email");
+        toast.error("Fill ID");
         setLoading(false);
         return;
       }
@@ -68,7 +68,6 @@ const Login = () => {
           </div>
           <Button loading={loading} type="submit" className="loginbtn">Login</Button>
           <br />
-          <Link href="/forgotpassword" className="fplnk">Forgot Password?</Link>
           
         </form>
       </div>
